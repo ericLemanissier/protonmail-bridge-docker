@@ -12,4 +12,6 @@ COPY gpgparams install.sh entrypoint.sh VERSION /protonmail/
 # Install dependencies and protonmail bridge
 RUN bash install.sh
 
+RUN gpg --generate-key --batch /protonmail/gpgparams && pass init pass-key
+
 ENTRYPOINT ["bash", "/protonmail/entrypoint.sh"]
