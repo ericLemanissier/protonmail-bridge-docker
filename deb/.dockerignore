@@ -2,7 +2,7 @@
 
 !.dockerignore
 !VERSION
-!entrypoint.sh
 !install.sh
 !gpgparams
 !Dockerfile
+!set_password.sh
